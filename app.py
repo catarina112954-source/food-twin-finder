@@ -4,7 +4,7 @@ from pathlib import Path
 
 st.set_page_config(page_title='Food Twin Finder',page_icon='🍕',layout='centered')
 DB=Path(__file__).with_name('food_twin.sqlite3')
-QUESTIONS=[('민트초코','반민초'),('물렁한 복숭아','딱딱한 복숭아'),('부먹','찍먹'),('매운 음식','순한 음식'),('파인애플 피자 찬성','파인애플 피자 반대')]
+QUESTIONS=[('매운 음식','안 매운 음식'),('치킨 다리살','퍽퍽살'),('뜨아','아아'),('밀떡','쌀떡'),('김치찌개','된장찌개')]
 
 def connect():
     c=sqlite3.connect(DB,timeout=15)
